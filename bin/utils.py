@@ -38,7 +38,8 @@ def build_c(input_file, logger):
     import platform
     import shutil
 
-    compiler = shutil.which(environ.get("CC", "gcc"))
+    # compiler = shutil.which(environ.get("CC", "gcc"))
+    compiler = shutil.which(environ.get("gcc", "clang"))
 
     if not compiler:
         logger.error("Could not find $CC or gcc compiler on PATH")
