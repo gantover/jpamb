@@ -16,3 +16,5 @@ result.json
 jpamb_utils.egg-info/
 
 report/
+
+.idea
