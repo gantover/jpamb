@@ -1,0 +1,366 @@
+{
+    "name": "jpamb/cases/Recursions",
+    "access": [
+        "public",
+        "super"
+    ],
+    "typeparams": [],
+    "super": {
+        "name": "java/lang/Object",
+        "inner": null,
+        "args": [],
+        "annotations": []
+    },
+    "interfaces": [],
+    "fields": [],
+    "methods": [
+        {
+            "name": "<init>",
+            "access": [
+                "public"
+            ],
+            "typeparams": [],
+            "params": [],
+            "returns": {
+                "type": null,
+                "annotations": []
+            },
+            "code": {
+                "max_stack": 1,
+                "max_locals": 1,
+                "exceptions": [],
+                "stack_map": null,
+                "lines": [
+                    {
+                        "offset": 0,
+                        "line": 3
+                    }
+                ],
+                "annotations": [],
+                "bytecode": [
+                    {
+                        "offset": 0,
+                        "opr": "load",
+                        "type": "ref",
+                        "index": 0
+                    },
+                    {
+                        "offset": 1,
+                        "opr": "invoke",
+                        "access": "special",
+                        "method": {
+                            "is_interface": false,
+                            "ref": {
+                                "kind": "class",
+                                "name": "java/lang/Object"
+                            },
+                            "name": "<init>",
+                            "args": [],
+                            "returns": null
+                        }
+                    },
+                    {
+                        "offset": 4,
+                        "opr": "return",
+                        "type": null
+                    }
+                ]
+            },
+            "annotations": [],
+            "exceptions": [],
+            "default": null
+        },
+        {
+            "name": "factorial",
+            "access": [
+                "public",
+                "static"
+            ],
+            "typeparams": [],
+            "params": [
+                {
+                    "visible": true,
+                    "type": {
+                        "base": "int",
+                        "annotations": []
+                    },
+                    "annotations": []
+                }
+            ],
+            "returns": {
+                "type": {
+                    "base": "int"
+                },
+                "annotations": []
+            },
+            "code": {
+                "max_stack": 3,
+                "max_locals": 1,
+                "exceptions": [],
+                "stack_map": [
+                    {
+                        "index": 10,
+                        "type": "same"
+                    }
+                ],
+                "lines": [
+                    {
+                        "offset": 0,
+                        "line": 5
+                    },
+                    {
+                        "offset": 3,
+                        "line": 6
+                    },
+                    {
+                        "offset": 10,
+                        "line": 8
+                    }
+                ],
+                "annotations": [],
+                "bytecode": [
+                    {
+                        "offset": 0,
+                        "opr": "load",
+                        "type": "int",
+                        "index": 0
+                    },
+                    {
+                        "offset": 1,
+                        "opr": "push",
+                        "value": {
+                            "type": "integer",
+                            "value": 1
+                        }
+                    },
+                    {
+                        "offset": 2,
+                        "opr": "if",
+                        "condition": "le",
+                        "target": 10
+                    },
+                    {
+                        "offset": 5,
+                        "opr": "load",
+                        "type": "int",
+                        "index": 0
+                    },
+                    {
+                        "offset": 6,
+                        "opr": "load",
+                        "type": "int",
+                        "index": 0
+                    },
+                    {
+                        "offset": 7,
+                        "opr": "push",
+                        "value": {
+                            "type": "integer",
+                            "value": 1
+                        }
+                    },
+                    {
+                        "offset": 8,
+                        "opr": "binary",
+                        "type": "int",
+                        "operant": "sub"
+                    },
+                    {
+                        "offset": 9,
+                        "opr": "invoke",
+                        "access": "static",
+                        "method": {
+                            "is_interface": false,
+                            "ref": {
+                                "kind": "class",
+                                "name": "jpamb/cases/Recursions"
+                            },
+                            "name": "factorial",
+                            "args": [
+                                "int"
+                            ],
+                            "returns": "int"
+                        }
+                    },
+                    {
+                        "offset": 12,
+                        "opr": "binary",
+                        "type": "int",
+                        "operant": "mul"
+                    },
+                    {
+                        "offset": 13,
+                        "opr": "return",
+                        "type": "int"
+                    },
+                    {
+                        "offset": 14,
+                        "opr": "push",
+                        "value": {
+                            "type": "integer",
+                            "value": 1
+                        }
+                    },
+                    {
+                        "offset": 15,
+                        "opr": "return",
+                        "type": "int"
+                    }
+                ]
+            },
+            "annotations": [],
+            "exceptions": [],
+            "default": null
+        },
+        {
+            "name": "badFactorial",
+            "access": [
+                "public",
+                "static"
+            ],
+            "typeparams": [],
+            "params": [
+                {
+                    "visible": true,
+                    "type": {
+                        "base": "int",
+                        "annotations": []
+                    },
+                    "annotations": []
+                }
+            ],
+            "returns": {
+                "type": {
+                    "base": "int"
+                },
+                "annotations": []
+            },
+            "code": {
+                "max_stack": 3,
+                "max_locals": 1,
+                "exceptions": [],
+                "stack_map": [
+                    {
+                        "index": 10,
+                        "type": "same"
+                    }
+                ],
+                "lines": [
+                    {
+                        "offset": 0,
+                        "line": 11
+                    },
+                    {
+                        "offset": 3,
+                        "line": 12
+                    },
+                    {
+                        "offset": 10,
+                        "line": 14
+                    }
+                ],
+                "annotations": [],
+                "bytecode": [
+                    {
+                        "offset": 0,
+                        "opr": "load",
+                        "type": "int",
+                        "index": 0
+                    },
+                    {
+                        "offset": 1,
+                        "opr": "push",
+                        "value": {
+                            "type": "integer",
+                            "value": 1
+                        }
+                    },
+                    {
+                        "offset": 2,
+                        "opr": "if",
+                        "condition": "le",
+                        "target": 10
+                    },
+                    {
+                        "offset": 5,
+                        "opr": "load",
+                        "type": "int",
+                        "index": 0
+                    },
+                    {
+                        "offset": 6,
+                        "opr": "load",
+                        "type": "int",
+                        "index": 0
+                    },
+                    {
+                        "offset": 7,
+                        "opr": "push",
+                        "value": {
+                            "type": "integer",
+                            "value": 1
+                        }
+                    },
+                    {
+                        "offset": 8,
+                        "opr": "binary",
+                        "type": "int",
+                        "operant": "add"
+                    },
+                    {
+                        "offset": 9,
+                        "opr": "invoke",
+                        "access": "static",
+                        "method": {
+                            "is_interface": false,
+                            "ref": {
+                                "kind": "class",
+                                "name": "jpamb/cases/Recursions"
+                            },
+                            "name": "badFactorial",
+                            "args": [
+                                "int"
+                            ],
+                            "returns": "int"
+                        }
+                    },
+                    {
+                        "offset": 12,
+                        "opr": "binary",
+                        "type": "int",
+                        "operant": "mul"
+                    },
+                    {
+                        "offset": 13,
+                        "opr": "return",
+                        "type": "int"
+                    },
+                    {
+                        "offset": 14,
+                        "opr": "push",
+                        "value": {
+                            "type": "integer",
+                            "value": 1
+                        }
+                    },
+                    {
+                        "offset": 15,
+                        "opr": "return",
+                        "type": "int"
+                    }
+                ]
+            },
+            "annotations": [],
+            "exceptions": [],
+            "default": null
+        }
+    ],
+    "bootstrapmethods": [],
+    "enclosingmethod": null,
+    "innerclasses": [],
+    "annotations": [],
+    "version": [
+        63,
+        0
+    ]
+}
