@@ -58,3 +58,4 @@ jpamb.cases.Tricky.collatz:(I)V                              (24) -> ok
 jpamb.cases.Recursions.factorial:(I)I                        (5) -> ok
 jpamb.cases.Recursions.factorial:(I)I                        (2000) -> depth exceeded 
 jpamb.cases.Recursions.badFactorial:(I)I                     (5) -> *
+jpamb.cases.Recursions.badFactorial:(I)I                     (1) -> ok 
