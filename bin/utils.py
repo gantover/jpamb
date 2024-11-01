@@ -22,6 +22,7 @@ QUERIES = [
     "null pointer",
     "ok",
     "out of bounds",
+    "depth exceeded",
 ]
 
 
@@ -38,8 +39,12 @@ def build_c(input_file, logger):
     import platform
     import shutil
 
-    # compiler = shutil.which(environ.get("CC", "gcc"))
-    compiler = shutil.which(environ.get("gcc", "clang"))
+    if platform.system() == "Windows":
+        # that's the original line, did not work on my macos computer
+        compiler = shutil.which(environ.get("CC", "gcc"))
+    else:
+        # this worked on my macos computer
+        compiler = shutil.which(environ.get("gcc", "clang"))
 
     if not compiler:
         logger.error("Could not find $CC or gcc compiler on PATH")
