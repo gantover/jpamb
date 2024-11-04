@@ -33,7 +33,7 @@
                 "lines": [
                     {
                         "offset": 0,
-                        "line": 3
+                        "line": 5
                     }
                 ],
                 "annotations": [],
@@ -106,15 +106,15 @@
                 "lines": [
                     {
                         "offset": 0,
-                        "line": 5
+                        "line": 10
                     },
                     {
                         "offset": 3,
-                        "line": 6
+                        "line": 11
                     },
                     {
                         "offset": 10,
-                        "line": 8
+                        "line": 13
                     }
                 ],
                 "annotations": [],
@@ -208,7 +208,43 @@
                     }
                 ]
             },
-            "annotations": [],
+            "annotations": [
+                {
+                    "type": "jpamb/utils/Cases",
+                    "is_runtime_visible": true,
+                    "values": {
+                        "value": {
+                            "type": "array",
+                            "value": [
+                                {
+                                    "type": "annotation",
+                                    "value": {
+                                        "type": "jpamb/utils/Case",
+                                        "values": {
+                                            "value": {
+                                                "type": "string",
+                                                "value": "(100000) -> depth exceeded"
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "type": "annotation",
+                                    "value": {
+                                        "type": "jpamb/utils/Case",
+                                        "values": {
+                                            "value": {
+                                                "type": "string",
+                                                "value": "(5) -> ok"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            ],
             "exceptions": [],
             "default": null
         },
@@ -248,15 +284,15 @@
                 "lines": [
                     {
                         "offset": 0,
-                        "line": 11
+                        "line": 19
                     },
                     {
                         "offset": 3,
-                        "line": 12
+                        "line": 20
                     },
                     {
                         "offset": 10,
-                        "line": 14
+                        "line": 22
                     }
                 ],
                 "annotations": [],
@@ -350,7 +386,314 @@
                     }
                 ]
             },
-            "annotations": [],
+            "annotations": [
+                {
+                    "type": "jpamb/utils/Cases",
+                    "is_runtime_visible": true,
+                    "values": {
+                        "value": {
+                            "type": "array",
+                            "value": [
+                                {
+                                    "type": "annotation",
+                                    "value": {
+                                        "type": "jpamb/utils/Case",
+                                        "values": {
+                                            "value": {
+                                                "type": "string",
+                                                "value": "(5) -> depth exceeded"
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "type": "annotation",
+                                    "value": {
+                                        "type": "jpamb/utils/Case",
+                                        "values": {
+                                            "value": {
+                                                "type": "string",
+                                                "value": "(1) -> ok"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            ],
+            "exceptions": [],
+            "default": null
+        },
+        {
+            "name": "alwaysRecursive",
+            "access": [
+                "public",
+                "static"
+            ],
+            "typeparams": [],
+            "params": [],
+            "returns": {
+                "type": null,
+                "annotations": []
+            },
+            "code": {
+                "max_stack": 0,
+                "max_locals": 0,
+                "exceptions": [],
+                "stack_map": null,
+                "lines": [
+                    {
+                        "offset": 0,
+                        "line": 27
+                    },
+                    {
+                        "offset": 1,
+                        "line": 28
+                    }
+                ],
+                "annotations": [],
+                "bytecode": [
+                    {
+                        "offset": 0,
+                        "opr": "invoke",
+                        "access": "static",
+                        "method": {
+                            "is_interface": false,
+                            "ref": {
+                                "kind": "class",
+                                "name": "jpamb/cases/Recursions"
+                            },
+                            "name": "alwaysRecursive",
+                            "args": [],
+                            "returns": null
+                        }
+                    },
+                    {
+                        "offset": 3,
+                        "opr": "return",
+                        "type": null
+                    }
+                ]
+            },
+            "annotations": [
+                {
+                    "type": "jpamb/utils/Case",
+                    "is_runtime_visible": true,
+                    "values": {
+                        "value": {
+                            "type": "string",
+                            "value": "() -> depth exceeded"
+                        }
+                    }
+                }
+            ],
+            "exceptions": [],
+            "default": null
+        },
+        {
+            "name": "neverFactorial",
+            "access": [
+                "public",
+                "static"
+            ],
+            "typeparams": [],
+            "params": [
+                {
+                    "visible": true,
+                    "type": {
+                        "base": "int",
+                        "annotations": []
+                    },
+                    "annotations": []
+                }
+            ],
+            "returns": {
+                "type": {
+                    "base": "int"
+                },
+                "annotations": []
+            },
+            "code": {
+                "max_stack": 3,
+                "max_locals": 2,
+                "exceptions": [],
+                "stack_map": [
+                    {
+                        "index": 2,
+                        "type": "append_frame",
+                        "info": [
+                            {
+                                "type": "integer"
+                            }
+                        ]
+                    },
+                    {
+                        "index": 5,
+                        "type": "same"
+                    },
+                    {
+                        "index": 15,
+                        "type": "same"
+                    }
+                ],
+                "lines": [
+                    {
+                        "offset": 0,
+                        "line": 32
+                    },
+                    {
+                        "offset": 2,
+                        "line": 33
+                    },
+                    {
+                        "offset": 5,
+                        "line": 36
+                    },
+                    {
+                        "offset": 8,
+                        "line": 37
+                    },
+                    {
+                        "offset": 15,
+                        "line": 39
+                    }
+                ],
+                "annotations": [],
+                "bytecode": [
+                    {
+                        "offset": 0,
+                        "opr": "push",
+                        "value": {
+                            "type": "integer",
+                            "value": 1
+                        }
+                    },
+                    {
+                        "offset": 1,
+                        "opr": "store",
+                        "type": "int",
+                        "index": 1
+                    },
+                    {
+                        "offset": 2,
+                        "opr": "load",
+                        "type": "int",
+                        "index": 1
+                    },
+                    {
+                        "offset": 3,
+                        "opr": "ifz",
+                        "condition": "le",
+                        "target": 5
+                    },
+                    {
+                        "offset": 6,
+                        "opr": "goto",
+                        "target": 2
+                    },
+                    {
+                        "offset": 9,
+                        "opr": "load",
+                        "type": "int",
+                        "index": 0
+                    },
+                    {
+                        "offset": 10,
+                        "opr": "push",
+                        "value": {
+                            "type": "integer",
+                            "value": 1
+                        }
+                    },
+                    {
+                        "offset": 11,
+                        "opr": "if",
+                        "condition": "le",
+                        "target": 15
+                    },
+                    {
+                        "offset": 14,
+                        "opr": "load",
+                        "type": "int",
+                        "index": 0
+                    },
+                    {
+                        "offset": 15,
+                        "opr": "load",
+                        "type": "int",
+                        "index": 0
+                    },
+                    {
+                        "offset": 16,
+                        "opr": "push",
+                        "value": {
+                            "type": "integer",
+                            "value": 1
+                        }
+                    },
+                    {
+                        "offset": 17,
+                        "opr": "binary",
+                        "type": "int",
+                        "operant": "sub"
+                    },
+                    {
+                        "offset": 18,
+                        "opr": "invoke",
+                        "access": "static",
+                        "method": {
+                            "is_interface": false,
+                            "ref": {
+                                "kind": "class",
+                                "name": "jpamb/cases/Recursions"
+                            },
+                            "name": "neverFactorial",
+                            "args": [
+                                "int"
+                            ],
+                            "returns": "int"
+                        }
+                    },
+                    {
+                        "offset": 21,
+                        "opr": "binary",
+                        "type": "int",
+                        "operant": "mul"
+                    },
+                    {
+                        "offset": 22,
+                        "opr": "return",
+                        "type": "int"
+                    },
+                    {
+                        "offset": 23,
+                        "opr": "push",
+                        "value": {
+                            "type": "integer",
+                            "value": 1
+                        }
+                    },
+                    {
+                        "offset": 24,
+                        "opr": "return",
+                        "type": "int"
+                    }
+                ]
+            },
+            "annotations": [
+                {
+                    "type": "jpamb/utils/Case",
+                    "is_runtime_visible": true,
+                    "values": {
+                        "value": {
+                            "type": "string",
+                            "value": "(1) -> *"
+                        }
+                    }
+                }
+            ],
             "exceptions": [],
             "default": null
         }
