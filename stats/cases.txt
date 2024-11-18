@@ -56,7 +56,7 @@ jpamb.cases.Simple.multiError:(Z)I                           (false) -> assertio
 jpamb.cases.Simple.multiError:(Z)I                           (true) -> divide by zero
 jpamb.cases.Tricky.collatz:(I)V                              (0) -> assertion error
 jpamb.cases.Tricky.collatz:(I)V                              (24) -> ok
-jpamb.cases.Recursions.factorial:(I)I                        (100000) -> depth exceeded 
+jpamb.cases.Recursions.factorial:(I)I                        (100000) -> depth exceeded
 jpamb.cases.Recursions.factorial:(I)I                        (5) -> ok
 jpamb.cases.Recursions.badFactorial:(I)I                     (5) -> depth exceeded
 jpamb.cases.Recursions.badFactorial:(I)I                     (1) -> ok
