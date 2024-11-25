@@ -173,10 +173,10 @@ def evaluate(
                 )
             except subprocess.CalledProcessError as e:
                 logger.warning(f"Tool {tool_name!r} failed with {e}")
-                fpred, time_ns = "", float("NaN")
+                fpred, time_ns = "", timeout * 1_000_000_000
             except subprocess.TimeoutExpired:
                 logger.warning(f"Tool {tool_name!r} timed out")
-                fpred, time_ns = "", float("NaN")
+                fpred, time_ns = "", timeout * 1_000_000_000
 
             total = 0
             time = time_ns / 1_000_000_000
